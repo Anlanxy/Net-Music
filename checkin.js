@@ -181,8 +181,8 @@ GitHub: Neurogram-R
 */
 
 const accounts = [
-    ["xtunnel", "https://xtunnel.pro/auth/login", "7045049@qq.com", "jklz9898"],
-    ["zuisucloud", "https://zuisucloud.live/auth/login", "7045049@qq.com", "jkl98798"]
+    ["xtunnel", "https://xtunnel.pro/auth/login", "账号", "密码"],
+    ["zuisucloud", "https://zuisucloud.live/auth/login", "账号", "密码"]
 ]
 
 async function launch() {
