@@ -25,14 +25,6 @@ let repositories = [
         url: "https://github.com/nzw9314/QuantumultX/tree/master",
     },
     {
-        name: "clash_for_windows_pkg",
-        url: "https://github.com/Fndroid/clash_for_windows_pkg/releases",
-    },
-    {
-        name: "Trojan-Qt5",
-        url: "https://github.com/Trojan-Qt5/Trojan-Qt5/releases",
-    },
-    {
         name: "Qure 图标",
         url: "https://github.com/Koolson/Qure",
     },
