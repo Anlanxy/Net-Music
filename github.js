@@ -17,7 +17,7 @@
  * 📌 如果希望监控Release，请切换至Release界面，直接复制URL填入；
  */
 
-let token = "784a03feb07989d3339dfa41c7eb41777436cbfa";
+let token = "5129784664ba9a56afefacee97d474569a2e8413";
 
 let repositories = [
     {
@@ -25,12 +25,12 @@ let repositories = [
         url: "https://github.com/nzw9314/QuantumultX/tree/master",
     },
     {
-        name: "ClashX",
-        url: "https://github.com/yichengchen/clashX/releases",
+        name: "clash_for_windows_pkg",
+        url: "https://github.com/Fndroid/clash_for_windows_pkg/releases",
     },
     {
-        name: "Chavy 脚本",
-        url: "https://github.com/chavyleung/scripts",
+        name: "Trojan-Qt5",
+        url: "https://github.com/Trojan-Qt5/Trojan-Qt5/releases",
     },
     {
         name: "Qure 图标",
