@@ -17,7 +17,7 @@
  * 📌 如果希望监控Release，请切换至Release界面，直接复制URL填入；
  */
 
-let token = "428a4a596ec16391210dd3940c450bda0c51aeb9";
+let token = "02c1d5e6fd161da04c597a55cc472e8531098363";
 
 let repositories = [
     {
