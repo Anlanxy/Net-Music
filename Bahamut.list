@@ -1,6 +1,6 @@
 # > Bahamut
-USER-AGENT,Anime*,🦁𝐁𝐚𝐡𝐚𝐦𝐮𝐭
-DOMAIN-SUFFIX,bahamut.com.tw,🦁𝐁𝐚𝐡𝐚𝐦𝐮𝐭
-DOMAIN-SUFFIX,gamer.com.tw,🦁𝐁𝐚𝐡𝐚𝐦𝐮𝐭
-DOMAIN,gamer-cds.cdn.hinet.net,🦁𝐁𝐚𝐡𝐚𝐦𝐮𝐭
-DOMAIN,gamer2-cds.cdn.hinet.net,🦁𝐁𝐚𝐡𝐚𝐦𝐮𝐭
+USER-AGENT,Anime*
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN,gamer-cds.cdn.hinet.net
+DOMAIN,gamer2-cds.cdn.hinet.net
