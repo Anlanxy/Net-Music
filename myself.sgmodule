@@ -1,6 +1,6 @@
 #!name=京东领豆任务合集 (GitHub)
 #!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-12 21:50
-#!raw=https://raw.githubusercontent.com/Anlanxy/Net-Music/master/myself.sgmodule
+#!raw:https://raw.githubusercontent.com/Anlanxy/Net-Music/master/myself.sgmodule
 
 [MITM]
 hostname = %APPEND% api.m.jd.com, bunearth.m.jd.com
