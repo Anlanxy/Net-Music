@@ -1,0 +1,8 @@
+#!name=京东领豆任务合集 (GitHub)
+#!desc=该模块收集并整理了当前所有关于 “京东” 可以获取京豆的脚本，脚本地址使用 GitHub 地址，该模块会快速更新。上次更新时间：2020-12-12 21:50
+
+[MITM]
+hostname = %APPEND% api.m.jd.com, bunearth.m.jd.com
+
+[Script]
+京东京豆 = type=cron,cronexp="6 20,0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=21600
