@@ -7,7 +7,6 @@ log-level: info
 external-controller: 127.0.0.1:9090
 experimental:
   ignore-resolve-fail: true
-# hosts: 'mtalk.google.com': 108.177.125.188
 dns:
   enable: true
   ipv6: false
@@ -815,18 +814,6 @@ proxy-groups:
       - 选择
       - 自动节点选择
       - 负载均衡
-  - name: hk
-    type: select # 亦可使用 fallback 或 load-balance
-    use:
-      - hk
-  - name: jp
-    type: select # 亦可使用 fallback 或 load-balance
-    use:
-      - jp
-  - name: tw
-    type: select # 亦可使用 fallback 或 load-balance
-    use:
-      - tw
 rule-providers:
   AbemaTV:
     type: http
