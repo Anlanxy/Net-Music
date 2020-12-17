@@ -1,0 +1,983 @@
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+experimental:
+  ignore-resolve-fail: true
+# hosts: 'mtalk.google.com': 108.177.125.188
+dns:
+  enable: true
+  ipv6: false
+  # enhanced-mode: redir-host
+  nameserver:
+    - 1.2.4.8
+    - 114.114.114.114
+    - 223.5.5.5
+  fallback:
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+    - tls://13800000000.rubyfish.cn:853
+cfw-latency-timeout: 3000
+cfw-latency-url: http://www.gstatic.com/generate_204
+cfw-conn-break-strategy:
+  proxy: none
+  profile: true
+  mode: false
+cfw-proxies-order: default
+cfw-bypass:
+  - qq.com
+  - music.163.com
+  - "*.music.126.net"
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - "*.423down.com"
+  - "*.bokecc.com"
+  - "*.chaipip.com"
+  - "*.hrtsea.com"
+  - "*.kaikeba.com"
+  - "*.laomo.me"
+  - "*.mpyit.com"
+  - "*.cn"
+  - "*.中国"
+  - "*.公司"
+  - "*.网络"
+  - "*-cn*"
+  - "*360buy*"
+  - "*alicdn*"
+  - "*alimama*"
+  - "*alipay*"
+  - "*appzapp*"
+  - "*baidupcs*"
+  - "*bilibili*"
+  - "*ccgslb*"
+  - "*chinacache*"
+  - "*duobao*"
+  - "*duolingo*"
+  - "*jdpay*"
+  - "*moke*"
+  - "*qhimg*"
+  - "*vpimg*"
+  - "*xiami*"
+  - "*xiaomi*"
+  - "*.360.com"
+  - "*.360kuai.com"
+  - "*.360safe.com"
+  - "*.dhrest.com"
+  - "*.qhres.com"
+  - "*.qhstatic.com"
+  - "*.qhupdate.com"
+  - "*.so.com"
+  - "*.4399.com"
+  - "*.4399pk.com"
+  - "*.5054399.com"
+  - "*.img4399.com"
+  - "*.58.com"
+  - "*.1688.com"
+  - "*.aliapp.org"
+  - "*.alibaba.com"
+  - "*.alibabacloud.com"
+  - "*.alibabausercontent.com"
+  - "*.alicdn.com"
+  - "*.aliexpress.com"
+  - "*.aliimg.com"
+  - "*.alikunlun.com"
+  - "*.alipay.com"
+  - "*.alipayobjects.com"
+  - "*.alisoft.com"
+  - "*.aliyun.com"
+  - "*.aliyuncdn.com"
+  - "*.aliyuncs.com"
+  - "*.amap.com"
+  - "*.autonavi.com"
+  - "*.dingtalk.com"
+  - "*.ele.me"
+  - "*.hichina.com"
+  - "*.mmstat.com"
+  - "*.mxhichina.com"
+  - "*.soku.com"
+  - "*.taobao.com"
+  - "*.taobaocdn.com"
+  - "*.tbcache.com"
+  - "*.tbcdn.com"
+  - "*.tmall.com"
+  - "*.tmall.hk"
+  - "*.ucweb.com"
+  - "*.xiami.com"
+  - "*.xiami.net"
+  - "*.ykimg.com"
+  - "*.youku.com"
+  - "*.baidu.com"
+  - "*.baidubcr.com"
+  - "*.baidupcs.com"
+  - "*.baidustatic.com"
+  - "*.bcebos.com"
+  - "*.bdimg.com"
+  - "*.bdstatic.com"
+  - "*.bdurl.net"
+  - "*.hao123.com"
+  - "*.hao123img.com"
+  - "*.jomodns.com"
+  - "*.yunjiasu-cdn.net"
+  - "*.acg.tv"
+  - "*.acgvideo.com"
+  - "*.b23.tv"
+  - "*.biliapi.com"
+  - "*.biliapi.net"
+  - "*.biligame.com"
+  - "*.biligame.net"
+  - "*.bilivideo.com"
+  - "*.hdslb.com"
+  - "*.im9.com"
+  - "*.battle.net"
+  - "*.battlenet.com"
+  - "*.blizzard.com"
+  - "*.bytedance.com"
+  - "*.bytedance.net"
+  - "*.bytedns.net"
+  - "*.byteimg.com"
+  - "*.feiliao.com"
+  - "*.gifshow.com"
+  - "*.huoshan.com"
+  - "*.iesdouyin.com"
+  - "*.ixigua.com"
+  - "*.kspkg.com"
+  - "*.pstatp.com"
+  - "*.snssdk.com"
+  - "*.toutiao.com"
+  - "*.toutiao13.com"
+  - "*.toutiaocdn.com"
+  - "*.toutiaocdn.net"
+  - "*.toutiaocloud.com"
+  - "*.toutiaohao.com"
+  - "*.toutiaohao.net"
+  - "*.toutiaoimg.com"
+  - "*.toutiaopage.com"
+  - "*.wukong.com"
+  - "*.zijieimg.com"
+  - "*.zjbyte.com"
+  - "*.zjcdn.com"
+  - "*.cctv.com"
+  - "*.cctvpic.com"
+  - "*.livechina.com"
+  - "*.21cn.com"
+  - "*.didialift.com"
+  - "*.didiglobal.com"
+  - "*.udache.com"
+  - "*.douyu.com"
+  - "*.douyu.tv"
+  - "*.douyutv.com"
+  - "*.epicgames.com"
+  - "*.helpshift.com"
+  - "*.paragon.com"
+  - "*.unrealengine.com"
+  - "*.dbankcdn.com"
+  - "*.hc-cdn.com"
+  - "*.hicloud.com"
+  - "*.huawei.com"
+  - "*.huaweicloud.com"
+  - "*.huaweishop.net"
+  - "*.hwccpc.com"
+  - "*.vmall.com"
+  - "*.vmallres.com"
+  - "*.iflyink.com"
+  - "*.iflyrec.com"
+  - "*.iflytek.com"
+  - "*.71.am"
+  - "*.71edge.com"
+  - "*.iqiyi.com"
+  - "*.iqiyipic.com"
+  - "*.ppsimg.com"
+  - "*.qiyi.com"
+  - "*.qiyipic.com"
+  - "*.qy.net"
+  - "*.360buy.com"
+  - "*.360buyimg.com"
+  - "*.jcloudcs.com"
+  - "*.jd.com"
+  - "*.jd.hk"
+  - "*.jdcloud.com"
+  - "*.jdpay.com"
+  - "*.paipai.com"
+  - "*.iciba.com"
+  - "*.ksosoft.com"
+  - "*.ksyun.com"
+  - "*.kuaishou.com"
+  - "*.yximgs.com"
+  - "*.meitu.com"
+  - "*.meitudata.com"
+  - "*.meitustat.com"
+  - "*.meipai.com"
+  - "*.le.com"
+  - "*.lecloud.com"
+  - "*.letv.com"
+  - "*.letvcloud.com"
+  - "*.letvimg.com"
+  - "*.letvlive.com"
+  - "*.letvstore.com"
+  - "*.hitv.com"
+  - "*.hunantv.com"
+  - "*.mgtv.com"
+  - "*.duokan.com"
+  - "*.mi-img.com"
+  - "*.mi.com"
+  - "*.miui.com"
+  - "*.xiaomi.com"
+  - "*.xiaomi.net"
+  - "*.xiaomicp.com"
+  - "*.126.com"
+  - "*.126.net"
+  - "*.127.net"
+  - "*.163.com"
+  - "*.163yun.com"
+  - "*.lofter.com"
+  - "*.netease.com"
+  - "*.ydstatic.com"
+  - "*.youdao.com"
+  - "*.pplive.com"
+  - "*.pptv.com"
+  - "*.pinduoduo.com"
+  - "*.yangkeduo.com"
+  - "*.leju.com"
+  - "*.miaopai.com"
+  - "*.sina.com"
+  - "*.sinaapp.com"
+  - "*.sinaimg.com"
+  - "*.weibo.com"
+  - "*.weibocdn.com"
+  - "*.xiaoka.tv"
+  - "*.go2map.com"
+  - "*.sogo.com"
+  - "*.sogou.com"
+  - "*.sogoucdn.com"
+  - "*.sohu-inc.com"
+  - "*.sohu.com"
+  - "*.sohucs.com"
+  - "*.sohuno.com"
+  - "*.sohurdc.com"
+  - "*.v-56.com"
+  - "*.playstation.com"
+  - "*.playstation.net"
+  - "*.playstationnetwork.com"
+  - "*.sony.com"
+  - "*.sonyentertainmentnetwork.com"
+  - "*.amplitude.com"
+  - "*.firebaseio.com"
+  - "*.hockeyapp.net"
+  - "*.smartmailcloud.com"
+  - "*.csgo.wmsj.cn"
+  - "*.dl.steam.ksyna.com"
+  - "*.dota2.wmsj.cn"
+  - "*.st.dl.bscstorage.net"
+  - "*.st.dl.eccdnx.com"
+  - "*.st.dl.pinyuncloud.com"
+  - "*.steamcdn-a.akamaihd.net"
+  - "*.steamcontent.com"
+  - "*.steamgames.com"
+  - "*.steampowered.com.8686c.com"
+  - "*.steamstat.us"
+  - "*.steamstatic.com"
+  - "*.steamusercontent.com"
+  - "*.foxmail.com"
+  - "*.gtimg.com"
+  - "*.idqqimg.com"
+  - "*.igamecj.com"
+  - "*.myapp.com"
+  - "*.myqcloud.com"
+  - "*.qq.com"
+  - "*.qqmail.com"
+  - "*.qqurl.com"
+  - "*.smtcdns.com"
+  - "*.smtcdns.net"
+  - "*.soso.com"
+  - "*.tencent-cloud.net"
+  - "*.tencent.com"
+  - "*.tencentmind.com"
+  - "*.tenpay.com"
+  - "*.wechat.com"
+  - "*.weixin.com"
+  - "*.weiyun.com"
+  - "*.appsimg.com"
+  - "*.appvipshop.com"
+  - "*.vip.com"
+  - "*.vipstatic.com"
+  - "*.ximalaya.com"
+  - "*.xmcdn.com"
+  - "*.00cdn.com"
+  - "*.88cdn.com"
+  - "*.kanimg.com"
+  - "*.kankan.com"
+  - "*.p2cdn.com"
+  - "*.sandai.net"
+  - "*.thundercdn.com"
+  - "*.xunlei.com"
+  - "*.got001.com"
+  - "*.jstucdn.com"
+  - "*.rrys.tv"
+  - "*.rrys2020.com"
+  - "*.yyets.com"
+  - "*.zimuzu.io"
+  - "*.zimuzu.tv"
+  - "*.zmz001.com"
+  - "*.zmz002.com"
+  - "*.zmz003.com"
+  - "*.zmz004.com"
+  - "*.zmz2019.com"
+  - "*.zmzapi.com"
+  - "*.zmzapi.net"
+  - "*.zmzfile.com"
+  - "*announce*"
+  - "*torrent*"
+  - "*tracker*"
+  - "*.animetorrents.me"
+  - "*.awesome-hd.me"
+  - "*.beitai.pt"
+  - "*.bittorrent.com"
+  - "*.broadcasthe.net"
+  - "*.chdbits.co"
+  - "*.classix-unlimited.co.uk"
+  - "*.empornium.me"
+  - "*.gazellegames.net"
+  - "*.hd4fans.org"
+  - "*.hdchina.org"
+  - "*.hdhome.org"
+  - "*.hdsky.me"
+  - "*.hdtime.org"
+  - "*.hdzone.me"
+  - "*.icetorrent.org"
+  - "*.jpopsuki.eu"
+  - "*.keepfrds.com"
+  - "*.leaguehd.com"
+  - "*.m-team.cc"
+  - "*.madsrevolution.net"
+  - "*.msg.vg"
+  - "*.nanyangpt.com"
+  - "*.ncore.cc"
+  - "*.open.cd"
+  - "*.ourbits.club"
+  - "*.passthepopcorn.me"
+  - "*.privatehd.to"
+  - "*.pthome.net"
+  - "*.redacted.ch"
+  - "*.springsunday.net"
+  - "*.tjupt.org"
+  - "*.totheglory.im"
+  - "*.trontv.com"
+  - "*.teamviewer.com"
+  - "*.baomitu.com"
+  - "*.bootcss.com"
+  - "*.jiasule.com"
+  - "*.jsdelivr.net"
+  - "*.staticfile.org"
+  - "*.upaiyun.com"
+  - "*.10010.com"
+  - "*.115.com"
+  - "*.12306.com"
+  - "*.17173.com"
+  - "*.178.com"
+  - "*.17k.com"
+  - "*.360doc.com"
+  - "*.36kr.com"
+  - "*.3dmgame.com"
+  - "*.51cto.com"
+  - "*.51job.com"
+  - "*.51jobcdn.com"
+  - "*.56.com"
+  - "*.8686c.com"
+  - "*.abchina.com"
+  - "*.abercrombie.com"
+  - "*.acfun.tv"
+  - "*.air-matters.com"
+  - "*.air-matters.io"
+  - "*.aixifan.com"
+  - "*.algocasts.io"
+  - "*.babytree.com"
+  - "*.babytreeimg.com"
+  - "*.baicizhan.com"
+  - "*.baidupan.com"
+  - "*.baike.com"
+  - "*.biqudu.com"
+  - "*.biquge.com"
+  - "*.bitauto.com"
+  - "*.c-ctrip.com"
+  - "*.camera360.com"
+  - "*.cdnmama.com"
+  - "*.chaoxing.com"
+  - "*.che168.com"
+  - "*.chinacache.net"
+  - "*.chinaso.com"
+  - "*.chinaz.com"
+  - "*.chinaz.net"
+  - "*.chuimg.com"
+  - "*.cibntv.net"
+  - "*.clouddn.com"
+  - "*.cloudxns.net"
+  - "*.cn163.net"
+  - "*.cnbeta.com"
+  - "*.cnbetacdn.com"
+  - "*.cnblogs.com"
+  - "*.cnki.net"
+  - "*.cnmstl.net"
+  - "*.coolapk.com"
+  - "*.coolapkmarket.com"
+  - "*.csdn.net"
+  - "*.ctrip.com"
+  - "*.dangdang.com"
+  - "*.dfcfw.com"
+  - "*.dianping.com"
+  - "*.dilidili.wang"
+  - "*.douban.com"
+  - "*.doubanio.com"
+  - "*.dpfile.com"
+  - "*.duowan.com"
+  - "*.dxycdn.com"
+  - "*.dytt8.net"
+  - "*.easou.com"
+  - "*.eastday.com"
+  - "*.eastmoney.com"
+  - "*.ecitic.com"
+  - "*.ewqcxz.com"
+  - "*.fang.com"
+  - "*.fantasy.tv"
+  - "*.feng.com"
+  - "*.fengkongcloud.com"
+  - "*.fir.im"
+  - "*.frdic.com"
+  - "*.fresh-ideas.cc"
+  - "*.ganji.com"
+  - "*.ganjistatic1.com"
+  - "*.geetest.com"
+  - "*.geilicdn.com"
+  - "*.ghpym.com"
+  - "*.godic.net"
+  - "*.gravatar.com"
+  - "*.guazi.com"
+  - "*.gwdang.com"
+  - "*.gzlzfm.com"
+  - "*.haibian.com"
+  - "*.haosou.com"
+  - "*.hollisterco.com"
+  - "*.hongxiu.com"
+  - "*.huajiao.com"
+  - "*.hupu.com"
+  - "*.huxiucdn.com"
+  - "*.huya.com"
+  - "*.ifeng.com"
+  - "*.ifengimg.com"
+  - "*.images-amazon.com"
+  - "*.infzm.com"
+  - "*.ipip.net"
+  - "*.it168.com"
+  - "*.ithome.com"
+  - "*.ixdzs.com"
+  - "*.jianguoyun.com"
+  - "*.jianshu.com"
+  - "*.jianshu.io"
+  - "*.jianshuapi.com"
+  - "*.jiathis.com"
+  - "*.jmstatic.com"
+  - "*.jumei.com"
+  - "*.kaola.com"
+  - "*.knewone.com"
+  - "*.koowo.com"
+  - "*.ksyungslb.com"
+  - "*.kuaidi100.com"
+  - "*.kugou.com"
+  - "*.lancdns.com"
+  - "*.landiannews.com"
+  - "*.lanzou.com"
+  - "*.lemicp.com"
+  - "*.letitfly.me"
+  - "*.linkedin.com"
+  - "*.lizhi.fm"
+  - "*.lizhi.io"
+  - "*.lizhifm.com"
+  - "*.loli.net"
+  - "*.luoo.net"
+  - "*.lvmama.com"
+  - "*.lxdns.com"
+  - "*.maoyan.com"
+  - "*.meilishuo.com"
+  - "*.meituan.com"
+  - "*.meituan.net"
+  - "*.meizu.com"
+  - "*.migucloud.com"
+  - "*.miguvideo.com"
+  - "*.mobike.com"
+  - "*.mogu.com"
+  - "*.mogucdn.com"
+  - "*.mogujie.com"
+  - "*.moji.com"
+  - "*.moke.com"
+  - "*.msstatic.com"
+  - "*.mubu.com"
+  - "*.myunlu.com"
+  - "*.nruan.com"
+  - "*.nuomi.com"
+  - "*.onedns.net"
+  - "*.onlinedown.net"
+  - "*.oracle.com"
+  - "*.oschina.net"
+  - "*.ourdvs.com"
+  - "*.overcast.fm"
+  - "*.paypal.com"
+  - "*.polyv.net"
+  - "*.qbox.me"
+  - "*.qcloud.com"
+  - "*.qcloudcdn.com"
+  - "*.qdaily.com"
+  - "*.qdmm.com"
+  - "*.qhimg.com"
+  - "*.qianqian.com"
+  - "*.qidian.com"
+  - "*.qihucdn.com"
+  - "*.qin.io"
+  - "*.qiniu.com"
+  - "*.qiniucdn.com"
+  - "*.qiniudn.com"
+  - "*.qiushibaike.com"
+  - "*.quanmin.tv"
+  - "*.qunar.com"
+  - "*.qunarzz.com"
+  - "*.rarbg.to"
+  - "*.repaik.com"
+  - "*.rrmj.tv"
+  - "*.ruguoapp.com"
+  - "*.runoob.com"
+  - "*.sankuai.com"
+  - "*.segmentfault.com"
+  - "*.sf-express.com"
+  - "*.shumilou.net"
+  - "*.simplecd.me"
+  - "*.sm.ms"
+  - "*.smzdm.com"
+  - "*.snwx.com"
+  - "*.soufunimg.com"
+  - "*.ssl-images-amazon.com"
+  - "*.sspai.com"
+  - "*.startssl.com"
+  - "*.suning.com"
+  - "*.taihe.com"
+  - "*.th-sjy.com"
+  - "*.tianqi.com"
+  - "*.tianqistatic.com"
+  - "*.tianyancha.com"
+  - "*.tianyaui.com"
+  - "*.tietuku.com"
+  - "*.tiexue.net"
+  - "*.tmiaoo.com"
+  - "*.trip.com"
+  - "*.ttmeiju.com"
+  - "*.tudou.com"
+  - "*.tuniu.com"
+  - "*.tuniucdn.com"
+  - "*.umengcloud.com"
+  - "*.upyun.com"
+  - "*.uxengine.net"
+  - "*.videocc.net"
+  - "*.vmware.com"
+  - "*.wandoujia.com"
+  - "*.weather.com"
+  - "*.weico.cc"
+  - "*.weidian.com"
+  - "*.weiphone.com"
+  - "*.weiphone.net"
+  - "*.womai.com"
+  - "*.wscdns.com"
+  - "*.xdrig.com"
+  - "*.xhscdn.com"
+  - "*.xiachufang.com"
+  - "*.xiaohongshu.com"
+  - "*.xiaojukeji.com"
+  - "*.xinhuanet.com"
+  - "*.xip.io"
+  - "*.xitek.com"
+  - "*.xiumi.us"
+  - "*.xslb.net"
+  - "*.xueqiu.com"
+  - "*.yach.me"
+  - "*.yeepay.com"
+  - "*.yhd.com"
+  - "*.yihaodianimg.com"
+  - "*.yinxiang.com"
+  - "*.yinyuetai.com"
+  - "*.yixia.com"
+  - "*.ys168.com"
+  - "*.yuewen.com"
+  - "*.yy.com"
+  - "*.yystatic.com"
+  - "*.zealer.com"
+  - "*.zhangzishi.cc"
+  - "*.zhanqi.tv"
+  - "*.zhaopin.com"
+  - "*.zhihu.com"
+  - "*.zhimg.com"
+  - "*.zhongsou.com"
+  - "*.zhuihd.com"
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+proxies:
+  - name: 俄勒冈州
+    type: trojan
+    server: nono.bnmc.tk
+    port: 443
+    password: 542e1a71
+  # - name: Snell-HK
+    # type: snell
+    # server: 18.163.206.223
+    # port: 32396
+    # psk: nQ3zFmmuzhth3Csw
+    # obfs-opts:
+      # mode: tls
+      # Host: www.bing.com
+  - name: yumo
+    type: socks5
+    server: 54.213.198.176
+    port: "51306"
+  - name: 𝐌𝐮𝐬𝐢𝐜1
+    type: http
+    server: 35.241.92.13
+    port: "3399"
+proxy-providers:
+  # name: # Provider 名称
+  #   type: # provider 类型，可以是 http 或者 file，分别为远程链接和本地文件。
+  #   path: # 文件保存路径，可以为绝对路径，./ 相对于 clash home 文件夹
+  #   url: # 类型为 http 时，填写的 URL 链接
+  #   interval: # 类型为 http 时，订阅自动更新周期
+  #   health-check: # 健康检查选项
+  #     enable:	# true or false
+  #     url: # 测试地址，可以为 http://www.gstatic.com/generate_204 
+  #     interval: # 测试间隔
+  ziyong:
+    type: http
+    url: "https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Fgist.githubusercontent.com%2FAnlanxy%2F5fbc650acad9940b8dcf4d775d43f827%2Fraw%2Fziyong&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Proxy/ziyong.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  netflix:
+    type: http
+    url: "https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Fgist.githubusercontent.com%2FAnlanxy%2F5fbc650acad9940b8dcf4d775d43f827%2Fraw%2Fnetflix&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Proxy/netflix.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  hk:
+    type: http
+    url: "https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Fgist.githubusercontent.com%2FAnlanxy%2F5fbc650acad9940b8dcf4d775d43f827%2Fraw%2Fziyong&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Proxy/hk.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  tw:
+    type: http
+    url: "https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Fgist.githubusercontent.com%2FAnlanxy%2F5fbc650acad9940b8dcf4d775d43f827%2Fraw%2Ftw&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Proxy/tw.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  jp:
+    type: http
+    url: "https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Fgist.githubusercontent.com%2FAnlanxy%2F5fbc650acad9940b8dcf4d775d43f827%2Fraw%2Fjp&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    interval: 3600
+    path: ./Proxy/jp.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - DIRECT
+      - 选择
+      - 故障检测
+      - 自动节点选择
+      - 负载均衡
+  - name: 选择
+    type: select
+    use:
+      - ziyong
+  - name: 故障检测
+    type: fallback
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    use:
+      - ziyong
+  - name: 自动节点选择
+    type: url-test
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    use:
+      - ziyong
+  - name: 负载均衡
+    type: load-balance
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    use:
+      - ziyong
+  - name: Netflix
+    type: select
+    use:
+      - netflix
+  - name: Youtube
+    type: select
+    proxies:
+      - hk
+      - tw
+      - jp
+  - name: Bahamut
+    type: select
+    use:
+      - tw
+  - name: 港澳台番剧
+    type: select
+    proxies:
+      - hk
+      - tw
+  - name: AbemaTV
+    type: select
+    use:
+      - jp
+  - name: Twitter
+    type: select
+    proxies:
+      - jp
+      - tw
+  - name: PayPal
+    type: select
+    proxies:
+      - DIRECT
+      - 选择
+      - 俄勒冈州
+  - name: NeteaseMusic
+    type: select
+    proxies:
+      - 𝐌𝐮𝐬𝐢𝐜1
+  - name: Telegram
+    type: select
+    proxies:
+      - DIRECT
+      - 选择
+      - 自动节点选择
+      - 负载均衡
+  - name: Final
+    type: select
+    proxies:
+      - DIRECT
+      - 选择
+      - 自动节点选择
+      - 负载均衡
+  - name: hk
+    type: select # 亦可使用 fallback 或 load-balance
+    use:
+      - hk
+  - name: jp
+    type: select # 亦可使用 fallback 或 load-balance
+    use:
+      - jp
+  - name: tw
+    type: select # 亦可使用 fallback 或 load-balance
+    use:
+      - tw
+rule-providers:
+  AbemaTV:
+    type: http
+    behavior: classical
+    path: ./RuleSet/AbemaTV.yaml
+    url: https://raw.githubusercontent.com/Anlanxy/Net-Music/master/AbemaTV.yaml
+    interval: 86400
+  Niconico:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Niconico.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Niconico/Niconico.yaml
+    interval: 86400
+  Bahamut:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Bahamut.yaml
+    url: https://raw.githubusercontent.com/Anlanxy/Net-Music/master/Bahamut.yaml
+    interval: 86400
+  Bilibili:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Bilibili.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Bilibili/Bilibili.yaml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Netflix.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Netflix/Netflix.yaml
+    interval: 86400
+  YouTube:
+    type: http
+    behavior: classical
+    path: ./RuleSet/YouTube.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/YouTube/YouTube.yaml
+    interval: 86400
+  NetEaseMusic:
+    type: http
+    behavior: classical
+    path: ./RuleSet/NetEaseMusic.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/NetEaseMusic/NetEaseMusic.yaml
+    interval: 86400
+  Twitter:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Twitter.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Twitter/Twitter.yaml
+    interval: 86400
+  PayPal:
+    type: http
+    behavior: classical
+    path: ./RuleSet/PayPal.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/PayPal/PayPal.yaml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Telegram.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Telegram/Telegram.yaml
+    interval: 86400
+  GlobalMedia:
+    type: http
+    behavior: classical
+    path: ./RuleSet/GlobalMedia.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/GlobalMedia/GlobalMedia.yaml
+    interval: 86400
+  Global:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Global.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Global/Global.yaml
+    interval: 86400
+  AsianMedia:
+    type: http
+    behavior: classical
+    path: ./RuleSet/AsianMedia.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/AsianMedia/AsianMedia.yaml
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    path: ./RuleSet/ChinaMedia.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    interval: 86400
+  China:
+    type: http
+    behavior: classical
+    path: ./RuleSet/China.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/China/China.yaml
+    interval: 86400
+  Adobe:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Adobe.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Adobe/Adobe.yaml
+    interval: 86400
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    path: ./RuleSet/LocalAreaNetwork.yaml
+    url: https://raw.githubusercontent.com/Anlanxy/Net-Music/master/LocalAreaNetwork.yaml
+    interval: 86400
+rules:
+  # > Unlock NeteaseMusic
+  - RULE-SET,NetEaseMusic,NeteaseMusic
+  # > HKMTMedia
+  - RULE-SET,Bilibili,港澳台番剧
+  # > PayPal
+  - RULE-SET,PayPal,PayPal
+  # > Netflix
+  - RULE-SET,Netflix,Netflix
+  # > Youtube
+  - RULE-SET,YouTube,Youtube
+  # > Bahamut
+  - RULE-SET,Bahamut,Bahamut
+  # > Abema&Niconico
+  - RULE-SET,AbemaTV,AbemaTV
+  - RULE-SET,Niconico,AbemaTV
+  # > Twritter
+  - RULE-SET,Twitter,Twitter
+  # > Telegram
+  - RULE-SET,Telegram,Telegram
+  # > Adobe
+  - RULE-SET,Adobe,Proxy
+  
+  # > GlobalMedia
+  - RULE-SET,GlobalMedia,Proxy
+  # > Global
+  - RULE-SET,Global,Proxy
+  
+  # China Area Network
+  - RULE-SET,China,DIRECT
+  - RULE-SET,AsianMedia,DIRECT
+  - RULE-SET,ChinaMedia,DIRECT
+  - RULE-SET,LocalAreaNetwork,DIRECT
+
+  # Local Area Network
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+
+  # （可选）使用来自 ipipdotnet 的 ChinaIP 以解决数据不准确的问题，使用 ChinaIP.yaml 时可禁用下列直至（包括）「GEOIP,CN」规则
+  # - RULE-SET,ChinaIP,DIRECT
+  # Tencent
+  - IP-CIDR,119.28.28.28/32,DIRECT
+  - IP-CIDR,182.254.116.0/24,DIRECT
+  
+  # GeoIP China
+  - GEOIP,CN,DIRECT
+  - MATCH,Final
