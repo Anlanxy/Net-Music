@@ -769,7 +769,7 @@ proxy-groups:
       - netflix
   - name: Youtube
     type: select
-    use:
+    proxies:
       - hk
       - tw
       - jp
@@ -779,13 +779,18 @@ proxy-groups:
       - tw
   - name: 港澳台番剧
     type: select
-    use:
+    proxies:
       - hk
       - tw
   - name: AbemaTV
     type: select
     use:
       - jp
+  - name: Twitter
+    type: select
+    proxies:
+      - jp
+      - tw
   - name: PayPal
     type: select
     proxies:
@@ -794,6 +799,8 @@ proxy-groups:
       - 俄勒冈州
   - name: NeteaseMusic
     type: select
+    proxies:
+      - 𝐌𝐮𝐬𝐢𝐜1
   - name: Telegram
     type: select
     proxies:
@@ -809,6 +816,11 @@ proxy-groups:
       - 自动节点选择
       - 负载均衡
 rule-providers:
+  Bahamut:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Bahamut.yaml
+    url: https://raw.githubusercontent.com/Anlanxy/Net-Music/master/Bahamut.yaml
   Netflix:
     type: http
     behavior: classical
