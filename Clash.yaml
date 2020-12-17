@@ -816,6 +816,11 @@ proxy-groups:
       - 自动节点选择
       - 负载均衡
 rule-providers:
+  AbemaTV:
+    type: http
+    behavior: classical
+    path: ./RuleSet/AbemaTV.yaml
+    url: https://raw.githubusercontent.com/Anlanxy/Net-Music/master/AbemaTV.yaml
   Bahamut:
     type: http
     behavior: classical
