@@ -685,6 +685,7 @@ proxy-providers:
   ziyong:
     type: http
     url: "https://subcon.dlj.tf/sub?target=clash&new_name=true&url=https%3A%2F%2Fgist.githubusercontent.com%2FAnlanxy%2F5fbc650acad9940b8dcf4d775d43f827%2Fraw%2Fziyong&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false"
+    #url: "https://dy.v2ray.life/api/v1/client/subscribe?token=091997f6173732f1e2748c93b43680ea"
     interval: 3600
     path: ./Proxy/ziyong.yaml
     health-check:
