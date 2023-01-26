@@ -1,0 +1,111 @@
+proxies:
+  - {"server":"av4zx.v6speed.com","port":38001,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港01","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38002,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港02","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38003,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港03","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38004,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港04","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38005,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港05","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38006,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港06","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38007,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港07","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38008,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港08","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38009,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港09","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38010,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇭🇰 香港10","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38101,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇨🇳 台湾01","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38102,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇨🇳 台湾02","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38103,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇨🇳 台湾03","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38104,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇨🇳 台湾04","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38105,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇨🇳 台湾05","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38201,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇸🇬 新加坡01","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38202,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇸🇬 新加坡02","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38203,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇸🇬 新加坡03","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38204,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇸🇬 新加坡04","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38205,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇸🇬 新加坡05","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38301,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇯🇵 日本01","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38302,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇯🇵 日本02","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38303,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇯🇵 日本03","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38304,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇯🇵 日本04","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38305,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇯🇵 日本05","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38501,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇺🇸 美国01","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38502,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇺🇸 美国02","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38503,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇺🇸 美国03","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38504,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇺🇸 美国04","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38505,"cipher":"chacha20-ietf-poly1305","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇺🇸 美国05","type":"ss"}
+  - {"server":"av4zx.v6speed.com","port":38615,"cipher":"aes-128-gcm","password":"c09fb7b2-8ecd-4c66-9a9b-7199b8205ebb","tfo":true,"udp":true,"name":"🇬🇧 英国01","type":"ss"}
+  - {"name":"🇭🇰 香港11","server":"sczx.bzlxzl.com","port":57001,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港12","server":"sczx.bzlxzl.com","port":57002,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港13","server":"sczx.bzlxzl.com","port":57003,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港14","server":"sczx.bzlxzl.com","port":57004,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港15","server":"sczx.bzlxzl.com","port":57005,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港16","server":"sczx.bzlxzl.com","port":57006,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港17","server":"sczx.bzlxzl.com","port":57007,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港18","server":"sczx.bzlxzl.com","port":57008,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港19","server":"sczx.bzlxzl.com","port":57009,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港20","server":"sczx.bzlxzl.com","port":57010,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港21","server":"sczx.bzlxzl.com","port":57011,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港22","server":"sczx.bzlxzl.com","port":57012,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港23","server":"sczx.bzlxzl.com","port":57013,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港24","server":"sczx.bzlxzl.com","port":57014,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港25","server":"sczx.bzlxzl.com","port":57015,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港26","server":"sczx.bzlxzl.com","port":57016,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港27","server":"sczx.bzlxzl.com","port":57017,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港28","server":"sczx.bzlxzl.com","port":57018,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港29","server":"sczx.bzlxzl.com","port":57019,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇭🇰 香港30","server":"sczx.bzlxzl.com","port":57020,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾06","server":"sczx.bzlxzl.com","port":57021,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾07","server":"sczx.bzlxzl.com","port":57022,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾08","server":"sczx.bzlxzl.com","port":57023,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾09","server":"sczx.bzlxzl.com","port":57024,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾10","server":"sczx.bzlxzl.com","port":57025,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾11","server":"sczx.bzlxzl.com","port":57026,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾12","server":"sczx.bzlxzl.com","port":57027,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾13","server":"sczx.bzlxzl.com","port":57028,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾14","server":"sczx.bzlxzl.com","port":57029,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇨🇳 台湾15","server":"sczx.bzlxzl.com","port":57030,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本06","server":"sczx.bzlxzl.com","port":57031,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本07","server":"sczx.bzlxzl.com","port":57032,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本08","server":"sczx.bzlxzl.com","port":57033,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本09","server":"sczx.bzlxzl.com","port":57034,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本10","server":"sczx.bzlxzl.com","port":57035,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本11","server":"sczx.bzlxzl.com","port":57036,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本12","server":"sczx.bzlxzl.com","port":57037,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本13","server":"sczx.bzlxzl.com","port":57038,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本14","server":"sczx.bzlxzl.com","port":57039,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇯🇵 日本15","server":"sczx.bzlxzl.com","port":57040,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡06","server":"sczx.bzlxzl.com","port":57041,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡07","server":"sczx.bzlxzl.com","port":57042,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡08","server":"sczx.bzlxzl.com","port":57043,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡09","server":"sczx.bzlxzl.com","port":57044,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡10","server":"sczx.bzlxzl.com","port":57045,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡11","server":"sczx.bzlxzl.com","port":57046,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡12","server":"sczx.bzlxzl.com","port":57047,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡13","server":"sczx.bzlxzl.com","port":57048,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡14","server":"sczx.bzlxzl.com","port":57049,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇸🇬 新加坡15","server":"sczx.bzlxzl.com","port":57050,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国06","server":"sczx.bzlxzl.com","port":57051,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国07","server":"sczx.bzlxzl.com","port":57052,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国08","server":"sczx.bzlxzl.com","port":57053,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国09","server":"sczx.bzlxzl.com","port":57054,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国10","server":"sczx.bzlxzl.com","port":57055,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国11","server":"sczx.bzlxzl.com","port":57056,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国12","server":"sczx.bzlxzl.com","port":57057,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国13","server":"sczx.bzlxzl.com","port":57058,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国14","server":"sczx.bzlxzl.com","port":57059,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇺🇸 美国15","server":"sczx.bzlxzl.com","port":57060,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇬🇧 英国02","server":"sczx.bzlxzl.com","port":57061,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇬🇧 英国03","server":"sczx.bzlxzl.com","port":57062,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇬🇧 英国04","server":"sczx.bzlxzl.com","port":57063,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇬🇧 英国05","server":"sczx.bzlxzl.com","port":57064,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇬🇧 英国06","server":"sczx.bzlxzl.com","port":57065,"cipher":"chacha20-ietf-poly1305","password":"mAgkiX","type":"ss"}
+  - {"name":"🇹🇭 𝑇ℎ𝑎𝑖𝑙𝑎𝑛𝑑01","server":"aflcn.meiquankongjian.com","port":51527,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇬🇧 英国07","server":"aflcn.meiquankongjian.com","port":51518,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇩🇪 𝐺𝑒𝑟𝑚𝑎𝑛𝑦01","server":"aflcn.meiquankongjian.com","port":51519,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇨🇦 𝐶𝑎𝑛𝑎𝑑𝑎01","server":"aflcn.meiquankongjian.com","port":51520,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇰🇷 𝐾𝑜𝑟𝑒𝑎01","server":"aflcn.meiquankongjian.com","port":51522,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇷🇺 𝑅𝑢𝑠𝑠𝑖𝑎01","server":"aflcn.meiquankongjian.com","port":51525,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇳🇱 𝑁𝑒𝑡ℎ𝑒𝑟𝑙𝑎𝑛𝑑𝑠01","server":"aflcn.meiquankongjian.com","port":51523,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇮🇳 𝐼𝑛𝑑𝑖𝑎01","server":"aflcn.meiquankongjian.com","port":51524,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇫🇷 𝐹𝑟𝑎𝑛𝑐𝑒01","server":"aflcn.meiquankongjian.com","port":51526,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇦🇷 𝐴𝑟𝑔𝑒𝑛𝑡𝑖𝑛𝑎01","server":"aflcn.meiquankongjian.com","port":51529,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇧🇷 𝐵𝑟𝑎𝑧𝑖𝑙01","server":"aflcn.meiquankongjian.com","port":51530,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇹🇷 𝑇𝑢𝑟𝑘𝑒𝑦01","server":"aflcn.meiquankongjian.com","port":51531,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇦🇺 𝐴𝑢𝑠𝑡𝑟𝑎𝑙𝑖𝑎01","server":"aflcn.meiquankongjian.com","port":51521,"uuid":"067cbfb4-6f0b-33dc-8c33-9ffe6733dfe9","tls":true,"type":"vmess","cipher":"none","alterId":0,"network":"ws","ws-opts":{"path":"/564dfa20/","headers":{"host":""}}}
+  - {"name":"🇰🇷 𝐾𝑜𝑟𝑒𝑎02","server":"aflgame.meiquankongjian.com","port":64484,"cipher":"chacha20-ietf-poly1305","password":"N7io2Z","type":"ss"}
