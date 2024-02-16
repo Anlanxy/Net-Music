@@ -116,7 +116,213 @@ proxy-groups:
 proxy-providers:
   provider1:
     type: http
-    url: "https://gist.githubusercontent.com/Anlanxy/a46b4d060291eded5b2c3d3f92d4aee1/raw/Meta"
+    url: "mixed-port: 10801
+allow-lan: true
+mode: rule
+log-level: debug
+geodata-mode: true
+geox-url:
+  geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+dns:
+  default-nameserver:
+    - 114.114.114.114
+    - 8.8.8.8
+    - tls://1.12.12.12:853
+    - tls://223.5.5.5:853
+    - system
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - Select
+      - Balance
+      - Ad Block
+      - DIRECT
+  - name: Select
+    type: select
+    proxies:
+      - HK
+      - TW
+      - JP
+      - US
+      - SG
+      - O/R
+      - DIRECT
+  - name: HKTMedia
+    type: select
+    proxies:
+      - HK
+      - TW
+      - JP
+      - US
+      - SG
+      - O/R
+  - name: GlobalMedia
+    type: select
+    proxies:
+      - Select
+      - DIRECT
+      - Ad Block
+  - name: Ad Block
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: Final
+    type: select
+    proxies:
+      - Proxy
+      - Select
+      - DIRECT
+  - name: "Balance"
+    type: load-balance
+    filter: "🇺🇸|🇸🇬|🇯🇵"
+    use:
+      - provider1
+    url: "https://cp.cloudflare.com/generate_204"
+    interval: 150
+  - name: HK
+    type: url-test
+    tolerance: 30
+    interval: 150
+    filter: "𝐻𝑜𝑛𝑔 𝐾𝑜𝑛𝑔"
+    url: "https://cp.cloudflare.com/generate_204"
+    use:
+      - provider1
+  - name: TW
+    type: url-test
+    tolerance: 30
+    interval: 150
+    filter: "𝑇𝑎𝑖𝑤𝑎𝑛"
+    url: "https://cp.cloudflare.com/generate_204"
+    use:
+      - provider1
+  - name: JP
+    type: url-test
+    tolerance: 30
+    interval: 150
+    filter: "𝐽𝑎𝑝𝑎𝑛"
+    url: "https://cp.cloudflare.com/generate_204"
+    use:
+      - provider1
+  - name: US
+    type: url-test
+    tolerance: 30
+    interval: 150
+    filter: "𝑈𝑛𝑖𝑡𝑒𝑑 𝑆𝑡𝑎𝑡𝑒𝑠"
+    url: "https://cp.cloudflare.com/generate_204"
+    use:
+      - provider1
+  - name: SG
+    type: url-test
+    tolerance: 30
+    interval: 150
+    filter: "𝑆𝑖𝑛𝑔𝑎𝑝𝑜𝑟𝑒"
+    url: "https://cp.cloudflare.com/generate_204"
+    use:
+      - provider1
+  - name: O/R
+    type: url-test
+    tolerance: 30
+    interval: 150
+    filter: "^((?!🇺🇸|🇸🇬|🇯🇵|🇨🇳|🇭🇰).)*$"
+    url: "https://cp.cloudflare.com/generate_204"
+    use:
+      - provider1
+proxy-providers:
+  provider1:
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=https%3A%2F%2Fgist.githubusercontent.com%2FAnlanxy%2Fa46b4d060291eded5b2c3d3f92d4aee1%2Fraw%2FMeta&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&emoji=true&list=true&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"
+    interval: 3600
+    # path: ./provider1.yaml # 默认只允许存储在 mihomo 的 Home Dir，如果想存储到任意位置，添加环境变量 SKIP_SAFE_PATH_CHECK=1
+    health-check:
+      enable: true
+      interval: 600
+      url: https://cp.cloudflare.com/generate_204
+rule-providers:
+  Reject:
+    behavior: domain # domain ipcidr
+    interval: 86400
+    path: ./ruleset/reject.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt"
+  Proxy:
+    behavior: classical # domain ipcidr
+    interval: 86400
+    path: ./ruleset/proxy.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.yaml"
+  Direct:
+    behavior: domain # domain ipcidr
+    interval: 86400
+    path: ./ruleset/direct.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
+  Bahamut:
+    behavior: classical # domain ipcidr
+    interval: 86400
+    path: ./ruleset/Bahamut.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml"
+  Netflix:
+    behavior: classical # domain ipcidr
+    interval: 86400
+    path: ./ruleset/Netflix.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml"
+  BiliBili:
+    behavior: classical # domain ipcidr
+    interval: 86400
+    path: ./ruleset/BiliBili.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml"
+  BilibiliHMT:
+    behavior: classical # domain ipcidr
+    interval: 86400
+    path: ./ruleset/BilibiliHMT.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBiliIntl/BiliBiliIntl.yaml"
+  Abema:
+    behavior: classical # domain ipcidr
+    interval: 86400
+    path: ./ruleset/Abema.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Abema/Abema.yaml"
+  Youtube:
+    behavior: classical # domain ipcidr
+    interval: 86400
+    path: ./ruleset/youtube.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
+  Telegram:
+    behavior: classical # domain ipcidr
+    interval: 86400
+    path: ./ruleset/Telegram.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
+  GlobalMedia:
+    behavior: classical # domain ipcidr
+    interval: 86400
+    path: ./ruleset/GlobalMedia.yaml
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml
+rules:
+  - RULE-SET,Reject,Ad Block
+  - RULE-SET,Proxy,Proxy
+  - RULE-SET,Direct,DIRECT
+  - RULE-SET,Bahamut,GlobalMedia
+  - RULE-SET,Netflix,GlobalMedia
+  - RULE-SET,BiliBili,HKTMedia
+  - RULE-SET,BilibiliHMT,HKTMedia
+  - RULE-SET,Abema,GlobalMedia
+  - RULE-SET,Youtube,GlobalMedia
+  - RULE-SET,Telegram,Select
+  - RULE-SET,GlobalMedia,GlobalMedia
+  - GEOSITE,github,Proxy
+  - GEOIP,CN,DIRECT
+  - MATCH,Final"
     interval: 3600
     path: ./provider1.yaml # 默认只允许存储在 mihomo 的 Home Dir，如果想存储到任意位置，添加环境变量 SKIP_SAFE_PATH_CHECK=1
     health-check:
