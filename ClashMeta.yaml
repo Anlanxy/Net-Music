@@ -1,3 +1,127 @@
+proxy-groups:
+  - name: "Proxies"
+    type: select
+    proxies:
+      - Fallback
+      - Balance
+      - Select
+      - Direct
+  - name: "Media国外"
+    type: select
+    proxies:
+      - Select
+      - Direct
+      - Fallback
+  - name: "Media国内"
+    type: select
+    proxies:
+      - HK
+      - TW
+      - Direct
+  - name: "Direct"
+    type: select
+    proxies:
+      - DIRECT
+  - name: "AD Block"
+    type: select
+    proxies:
+      - REJECT
+  - name: "Final"
+    type: select
+    proxies:
+      - Select
+      - Proxies
+      - Direct
+  - name: "Fallback"
+    type: fallback
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 150
+    proxies:
+      - HK
+      - TW
+      - JP
+      - US
+      - SG
+  - name: "Balance"
+    type: load-balance
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 200
+    filter: HK|TW|US
+    use:
+      - clashmeta
+  - name: "Select"
+    type: select
+    proxies:
+      - HK
+      - TW
+      - JP
+      - SG
+      - US
+      - OR
+  - name: "OR"
+    type: select
+    exclude-filter: HK|TW|JP|US|SG|UK
+    use:
+      - clashmeta
+  - name: "HK"
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    filter: "HK"
+    tolerance: 30
+    interval: 120
+    use:
+      - clashmeta
+  - name: "TW"
+      type: url-test
+      url: 'https://cp.cloudflare.com/generate_204'
+      filter: "TW"
+      tolerance: 30
+      interval: 120
+      use:
+        - clashmeta
+  - name: "JP"
+      type: url-test
+      url: 'https://cp.cloudflare.com/generate_204'
+      filter: "JP"
+      tolerance: 30
+      interval: 120
+      use:
+        - clashmeta
+  - name: "US"
+      type: url-test
+      url: 'https://cp.cloudflare.com/generate_204'
+      filter: "US"
+      tolerance: 30
+      interval: 120
+      use:
+        - clashmeta
+  - name: "SG"
+      type: url-test
+      url: 'https://cp.cloudflare.com/generate_204'
+      filter: "SG"
+      tolerance: 30
+      interval: 120
+      use:
+        - clashmeta
+  - name: "UK"
+      type: url-test
+      url: 'https://cp.cloudflare.com/generate_204'
+      filter: "UK"
+      tolerance: 30
+      interval: 120
+      use:
+        - clashmeta
+  - name: "Service"
+    type: select
+    proxies:
+      - Select
+      - Direct
+  - name: "APP"
+      type: select
+      proxies:
+        - Fallback
+        - Select
+        - Direct
 proxy-providers:
   clashmeta:
     type: http
