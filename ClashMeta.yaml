@@ -1,38 +1,50 @@
 proxy-groups:
-  - name: "𝑷𝒓𝒐𝒙𝒊𝒆𝒔"
+  - name: 𝑷𝒓𝒐𝒙𝒊𝒆𝒔
     type: select
     proxies:
       - 𝑺𝒆𝒍𝒆𝒄𝒕
       - 𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌
       - 𝑩𝒂𝒍𝒂𝒏𝒄𝒆 𝑷𝑪𝑪
       - 𝑫𝒊𝒓𝒆𝒄𝒕
-  - name: "𝑴𝒆𝒅𝒊𝒂国外"
+  - name: 𝑴𝒆𝒅𝒊𝒂◆
     type: select
     proxies:
       - 𝑺𝒆𝒍𝒆𝒄𝒕
       - 𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌
       - 𝑫𝒊𝒓𝒆𝒄𝒕
-  - name: "𝑴𝒆𝒅𝒊𝒂国内"
+  - name: 𝑴𝒆𝒅𝒊𝒂◇
     type: select
     proxies:
       - 𝑯𝑲*
       - 𝑻𝑾*
       - 𝑫𝒊𝒓𝒆𝒄𝒕
-  - name: "𝑫𝒊𝒓𝒆𝒄𝒕"
+  - name: 𝑺𝒆𝒓𝒗𝒊𝒄𝒆
     type: select
     proxies:
-      - DIRECT
-  - name: "𝑨𝑫 𝑩𝒍𝒐𝒄𝒌"
+      - 𝑺𝒆𝒍𝒆𝒄𝒕
+      - 𝑫𝒊𝒓𝒆𝒄𝒕
+  - name: 𝑨𝑷𝑷
     type: select
     proxies:
-      - REJECT
-  - name: "𝑭𝒊𝒏𝒂𝒍"
+      - 𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌
+      - 𝑺𝒆𝒍𝒆𝒄𝒕
+      - 𝑫𝒊𝒓𝒆𝒄𝒕
+  - name: 𝑭𝒊𝒏𝒂𝒍
     type: select
     proxies:
       - 𝑺𝒆𝒍𝒆𝒄𝒕
       - 𝑷𝒓𝒐𝒙𝒊𝒆𝒔
       - 𝑫𝒊𝒓𝒆𝒄𝒕
-  - name: "𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌"
+  - name: 𝑺𝒆𝒍𝒆𝒄𝒕
+    type: select
+    proxies:
+      - 𝑯𝑲*
+      - 𝑻𝑾*
+      - 𝑱𝑷*
+      - 𝑺𝑮*
+      - 𝑼𝑺*
+      - 𝑶𝑹^
+  - name: 𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌
     type: fallback
     url: 'https://www.gstatic.com/generate_204'
     interval: 150
@@ -42,28 +54,27 @@ proxy-groups:
       - 𝑱𝑷*
       - 𝑼𝑺*
       - 𝑺𝑮*
-  - name: "𝑩𝒂𝒍𝒂𝒏𝒄𝒆 𝑷𝑪𝑪"
+  - name: 𝑨𝑫 𝑩𝒍𝒐𝒄𝒌
+    type: select
+    proxies:
+      - REJECT
+  - name: 𝑩𝒂𝒍𝒂𝒏𝒄𝒆 𝑷𝑪𝑪
     type: load-balance
     url: 'https://www.gstatic.com/generate_204'
     interval: 200
     filter: HK|TW|US
     use:
       - clashmeta
-  - name: "𝑺𝒆𝒍𝒆𝒄𝒕"
-    type: select
-    proxies:
-      - 𝑯𝑲*
-      - 𝑻𝑾*
-      - 𝑱𝑷*
-      - 𝑺𝑮*
-      - 𝑼𝑺*
-      - 𝑶𝑹^
-  - name: "𝑶𝑹^"
+  - name: 𝑶𝑹^
     type: select
     exclude-filter: HK|TW|JP|US|SG|UK
     use:
       - clashmeta
-  - name: "𝑯𝑲*"
+  - name: 𝑫𝒊𝒓𝒆𝒄𝒕
+    type: select
+    proxies:
+      - DIRECT
+  - name: 𝑯𝑲*
     type: url-test
     url: 'https://cp.cloudflare.com/generate_204'
     filter: "HK"
@@ -71,7 +82,7 @@ proxy-groups:
     interval: 120
     use:
       - clashmeta
-  - name: "𝑻𝑾*"
+  - name: 𝑻𝑾*
       type: url-test
       url: 'https://cp.cloudflare.com/generate_204'
       filter: "TW"
@@ -79,15 +90,15 @@ proxy-groups:
       interval: 120
       use:
         - clashmeta
-  - name: "𝑱𝑷*"
+  - name: 𝑱𝑷*
       type: url-test
       url: 'https://cp.cloudflare.com/generate_204'
-      filter: "jp"
+      filter: "JP"
       tolerance: 30
       interval: 120
       use:
         - clashmeta
-  - name: "𝑼𝑺*"
+  - name: 𝑼𝑺*
       type: url-test
       url: 'https://cp.cloudflare.com/generate_204'
       filter: "US"
@@ -95,7 +106,7 @@ proxy-groups:
       interval: 120
       use:
         - clashmeta
-  - name: "𝑺𝑮*"
+  - name: 𝑺𝑮*
       type: url-test
       url: 'https://cp.cloudflare.com/generate_204'
       filter: "SG"
@@ -103,7 +114,7 @@ proxy-groups:
       interval: 120
       use:
         - clashmeta
-  - name: "𝑼𝑲*"
+  - name: 𝑼𝑲*
       type: url-test
       url: 'https://cp.cloudflare.com/generate_204'
       filter: "UK"
@@ -111,17 +122,6 @@ proxy-groups:
       interval: 120
       use:
         - clashmeta
-  - name: "𝑺𝒆𝒓𝒗𝒊𝒄𝒆"
-    type: select
-    proxies:
-      - Select
-      - Direct
-  - name: "𝑨𝑷𝑷"
-      type: select
-      proxies:
-        - Fallback
-        - Select
-        - Direct
 proxy-providers:
   clashmeta:
     type: http
