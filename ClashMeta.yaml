@@ -2,22 +2,22 @@ proxy-groups:
   - name: "𝑷𝒓𝒐𝒙𝒊𝒆𝒔"
     type: select
     proxies:
+      - 𝑺𝒆𝒍𝒆𝒄𝒕
       - 𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌
-      - Balance
-      - Select
-      - Direct
+      - 𝑩𝒂𝒍𝒂𝒏𝒄𝒆 𝑷𝑪𝑪
+      - 𝑫𝒊𝒓𝒆𝒄𝒕
   - name: "𝑴𝒆𝒅𝒊𝒂国外"
     type: select
     proxies:
-      - Select
-      - Direct
-      - Fallback
+      - 𝑺𝒆𝒍𝒆𝒄𝒕
+      - 𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌
+      - 𝑫𝒊𝒓𝒆𝒄𝒕
   - name: "𝑴𝒆𝒅𝒊𝒂国内"
     type: select
     proxies:
-      - HK
-      - TW
-      - Direct
+      - 𝑯𝑲*
+      - 𝑻𝑾*
+      - 𝑫𝒊𝒓𝒆𝒄𝒕
   - name: "𝑫𝒊𝒓𝒆𝒄𝒕"
     type: select
     proxies:
@@ -29,20 +29,20 @@ proxy-groups:
   - name: "𝑭𝒊𝒏𝒂𝒍"
     type: select
     proxies:
-      - Select
-      - Proxies
-      - Direct
+      - 𝑺𝒆𝒍𝒆𝒄𝒕
+      - 𝑷𝒓𝒐𝒙𝒊𝒆𝒔
+      - 𝑫𝒊𝒓𝒆𝒄𝒕
   - name: "𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌"
     type: fallback
     url: 'https://www.gstatic.com/generate_204'
     interval: 150
     proxies:
-      - HK
-      - TW
-      - JP
-      - US
-      - SG
-  - name: "Balance"
+      - 𝑯𝑲*
+      - 𝑻𝑾*
+      - 𝑱𝑷*
+      - 𝑼𝑺*
+      - 𝑺𝑮*
+  - name: "𝑩𝒂𝒍𝒂𝒏𝒄𝒆 𝑷𝑪𝑪"
     type: load-balance
     url: 'https://www.gstatic.com/generate_204'
     interval: 200
@@ -52,12 +52,12 @@ proxy-groups:
   - name: "𝑺𝒆𝒍𝒆𝒄𝒕"
     type: select
     proxies:
-      - HK
-      - TW
-      - JP
-      - SG
-      - US
-      - OR
+      - 𝑯𝑲*
+      - 𝑻𝑾*
+      - 𝑱𝑷*
+      - 𝑺𝑮*
+      - 𝑼𝑺*
+      - 𝑶𝑹^
   - name: "𝑶𝑹^"
     type: select
     exclude-filter: HK|TW|JP|US|SG|UK
