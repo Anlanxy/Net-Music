@@ -83,45 +83,45 @@ proxy-groups:
     use:
       - clashmeta
   - name: 𝑻𝑾*
-      type: url-test
-      url: 'https://cp.cloudflare.com/generate_204'
-      filter: "𝑇𝑎𝑖𝑤𝑎𝑛"
-      tolerance: 30
-      interval: 120
-      use:
-        - clashmeta
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    filter: "𝑇𝑎𝑖𝑤𝑎𝑛"
+    tolerance: 30
+    interval: 120
+    use:
+      - clashmeta
   - name: 𝑱𝑷*
-      type: url-test
-      url: 'https://cp.cloudflare.com/generate_204'
-      filter: "𝐽𝑎𝑝𝑎𝑛"
-      tolerance: 30
-      interval: 120
-      use:
-        - clashmeta
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    filter: "𝐽𝑎𝑝𝑎𝑛"
+    tolerance: 30
+    interval: 120
+    use:
+      - clashmeta
   - name: 𝑼𝑺*
-      type: url-test
-      url: 'https://cp.cloudflare.com/generate_204'
-      filter: "𝑈𝑛𝑖𝑡𝑒𝑑 𝑆𝑡𝑎𝑡𝑒𝑠"
-      tolerance: 30
-      interval: 120
-      use:
-        - clashmeta
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    filter: "𝑈𝑛𝑖𝑡𝑒𝑑 𝑆𝑡𝑎𝑡𝑒𝑠"
+    tolerance: 30
+    interval: 120
+    use:
+      - clashmeta
   - name: 𝑺𝑮*
-      type: url-test
-      url: 'https://cp.cloudflare.com/generate_204'
-      filter: "𝑆𝑖𝑛𝑔𝑎𝑝𝑜𝑟𝑒"
-      tolerance: 30
-      interval: 120
-      use:
-        - clashmeta
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    filter: "𝑆𝑖𝑛𝑔𝑎𝑝𝑜𝑟𝑒"
+    tolerance: 30
+    interval: 120
+    use:
+      - clashmeta
   - name: 𝑼𝑲*
-      type: url-test
-      url: 'https://cp.cloudflare.com/generate_204'
-      filter: "𝑈𝑛𝑖𝑡𝑒𝑑 𝐾𝑖𝑛𝑔𝑑𝑜𝑚"
-      tolerance: 30
-      interval: 120
-      use:
-        - clashmeta
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    filter: "𝑈𝑛𝑖𝑡𝑒𝑑 𝐾𝑖𝑛𝑔𝑑𝑜𝑚"
+    tolerance: 30
+    interval: 120
+    use:
+      - clashmeta
 proxy-providers:
   clashmeta:
     type: http
