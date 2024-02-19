@@ -77,19 +77,20 @@ proxy-groups:
   - name: 𝑯𝑲*
     type: url-test
     url: 'https://cp.cloudflare.com/generate_204'
-    filter: "𝐻𝑜𝑛𝑔 𝐾𝑜𝑛𝑔
+    filter: "𝐻𝑜𝑛𝑔 𝐾𝑜𝑛𝑔"
     tolerance: 30
     interval: 120
     use:
       - clashmeta
   - name: 𝑻𝑾*
-      type: url-test
-      url: 'https://cp.cloudflare.com/generate_204'
-      filter: "𝑇𝑎𝑖𝑤𝑎𝑛
-      tolerance: 30
-      interval: 120
-      use:
-        - clashmeta
+    type: url-test
+    url:
+'https://cp.cloudflare.com/generate_204'
+    filter: "𝑇𝑎𝑖𝑤𝑎𝑛"
+    tolerance: 30
+    interval: 120
+    use:
+      - clashmeta
   - name: 𝑱𝑷*
       type: url-test
       url: 'https://cp.cloudflare.com/generate_204'
