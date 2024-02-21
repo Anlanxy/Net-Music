@@ -253,7 +253,7 @@ rules:
   - RULE-SET,AsianMedia,𝑴𝒆𝒅𝒊𝒂◇
   - RULE-SET,Netfilx,𝑴𝒆𝒅𝒊𝒂◆
   - RULE-SET,Bahamut,𝑴𝒆𝒅𝒊𝒂◆
-  #- RULE-SET,YouTube,𝑴𝒆𝒅𝒊𝒂◆
+  - GEOSITE,YouTube,𝑴𝒆𝒅𝒊𝒂◆
   - RULE-SET,Abema,𝑴𝒆𝒅𝒊𝒂◆
   - GEOSITE,github,𝑷𝒓𝒐𝒙𝒊𝒆𝒔
   - GEOSITE,twitter,𝑨𝑷𝑷
