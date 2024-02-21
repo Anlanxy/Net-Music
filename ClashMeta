@@ -215,12 +215,12 @@ rule-providers:
     interval: 86400
     path: ./ruleset/Bahamut.yaml
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml"
-  Youtube:
-    type: http
-    behavior: classical
-    interval: 86400
-    path: ./ruleset/YouTube.yaml
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
+  #Youtube:
+    #type: http
+    #behavior: classical
+    #interval: 86400
+    #path: ./ruleset/YouTube.yaml
+    #url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
   Abema:
     type: http
     behavior: classical
@@ -254,7 +254,7 @@ rules:
   - RULE-SET,Netfilx,𝑴𝒆𝒅𝒊𝒂◆
   - RULE-SET,Bahamut,𝑴𝒆𝒅𝒊𝒂◆
   - GEOSITE,YouTube,𝑴𝒆𝒅𝒊𝒂◆
-  - RULE-SET,Abema,𝑴𝒆𝒅𝒊𝒂◆
+  - GEOSITE,Abema,𝑴𝒆𝒅𝒊𝒂◆
   - GEOSITE,github,𝑷𝒓𝒐𝒙𝒊𝒆𝒔
   - GEOSITE,twitter,𝑨𝑷𝑷
   - GEOSITE,ehentai,𝑺𝒆𝒓𝒗𝒊𝒄𝒆
