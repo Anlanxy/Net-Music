@@ -66,6 +66,15 @@ proxy-groups:
       - 𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌
       - 𝑩𝒂𝒍𝒂𝒏𝒄𝒆 𝑷𝑪𝑪
       - 𝑫𝒊𝒓𝒆𝒄𝒕
+  - name: 𝑺𝒆𝒍𝒆𝒄𝒕
+    type: select
+    proxies:
+      - 𝑯𝑲*
+      - 𝑻𝑾*
+      - 𝑱𝑷*
+      - 𝑺𝑮*
+      - 𝑼𝑺*
+      - 𝑶𝑹^
   - name: 𝑴𝒆𝒅𝒊𝒂◆
     type: select
     proxies:
@@ -95,15 +104,6 @@ proxy-groups:
       - 𝑺𝒆𝒍𝒆𝒄𝒕
       - 𝑷𝒓𝒐𝒙𝒊𝒆𝒔
       - 𝑫𝒊𝒓𝒆𝒄𝒕
-  - name: 𝑺𝒆𝒍𝒆𝒄𝒕
-    type: select
-    proxies:
-      - 𝑯𝑲*
-      - 𝑻𝑾*
-      - 𝑱𝑷*
-      - 𝑺𝑮*
-      - 𝑼𝑺*
-      - 𝑶𝑹^
   - name: 𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌
     type: fallback
     url: 'https://www.gstatic.com/generate_204'
@@ -293,6 +293,7 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PikPak/PikPak.yaml"
 rules:
   - RULE-SET,Reject,𝑨𝑫 𝑩𝒍𝒐𝒄𝒌
+  - RULE-SET,Direct,𝑫𝒊𝒓𝒆𝒄𝒕
   - GEOSITE,github,𝑷𝒓𝒐𝒙𝒊𝒆𝒔
   - GEOSITE,google,𝑷𝒓𝒐𝒙𝒊𝒆𝒔
   - RULE-SET,Paypal,𝑺𝒆𝒓𝒗𝒊𝒄𝒆
