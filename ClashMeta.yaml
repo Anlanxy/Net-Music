@@ -25,9 +25,9 @@ tun:
   enable: true
   stack: system
   dns-hijack:
-    - 'any:53'
-  auto-route: true
-  auto-detect-interface: true
+    - '0.0.0.0:53'
+  auto-route: false
+  auto-detect-interface: false
 dns:
   enable: true
   listen: 0.0.0.0:1053
