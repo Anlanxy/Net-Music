@@ -242,7 +242,7 @@ rule-providers:
 #proxy-providers:
   #clashmeta:
    #type: http
-   #url: "https://gist.githubusercontent.com/Anlanxy/a46b4d060291eded5b2c3d3f92d4aee1/raw/Meta"
+   #url: ""
    #interval: 1200
 rules:
   - RULE-SET,Direct,𝑫𝒊𝒓𝒆𝒄𝒕
