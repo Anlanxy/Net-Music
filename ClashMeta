@@ -173,15 +173,15 @@ proxy-groups:
     use:
       - clashmeta
 proxy-providers:
-clashmeta:
-type: http
-url: "https://gist.githubusercontent.com/Anlanxy/a46b4d060291eded5b2c3d3f92d4aee1/raw/Meta"
-interval: 1200
-# path: ./provider1.yaml
-health-check:
-enable: true
-interval: 300
-url: https://cp.cloudflare.com/generate_204
+  clashmeta:
+    type: http
+    url: "https://gist.githubusercontent.com/Anlanxy/a46b4d060291eded5b2c3d3f92d4aee1/raw/Meta"
+    interval: 1200
+    # path: ./provider1.yaml
+  health-check:
+    enable: true
+    interval: 300
+    url: https://cp.cloudflare.com/generate_204
 rule-providers:
   Direct:
     behavior: classical
@@ -312,7 +312,6 @@ rules:
   - RULE-SET,Netfilx,𝑴𝒆𝒅𝒊𝒂◆
   - RULE-SET,YouTubeMusic,𝑴𝒆𝒅𝒊𝒂◆
   - RULE-SET,Proxy,𝑷𝒓𝒐𝒙𝒊𝒆𝒔
-  # - GEOSITE,bilibili,
   - GEOSITE,CN,𝑫𝒊𝒓𝒆𝒄𝒕
   - GEOIP,CN,𝑫𝒊𝒓𝒆𝒄𝒕
   - MATCH,𝑭𝒊𝒏𝒂𝒍
