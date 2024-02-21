@@ -183,83 +183,90 @@ proxy-providers:
     interval: 300
     url: https://cp.cloudflare.com/generate_204
 rule-providers:
-Direct:
-  type: http
-  behavior: classical
-  interval: 86400
-  path: ./ruleset/direct.yaml
-  url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml"
-Reject:
-  type: http
-  behavior: domain
-  interval: 86400
-  path: ./ruleset/reject.yaml
-  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-Paypal:
-  type: http
-  behavior: classical
-  interval: 86400
-  path: ./ruleset/paypal.yaml
-  url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/PayPal/PayPal.yaml"
-PikPak:
-  type: http
-  behavior: classical
-  interval: 86400
-  path: ./ruleset/PikPak.yaml
-  url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PikPak/PikPak.yaml"
-Netfilx:
-  type: http
-  behavior: classical
-  interval: 86400
-  path: ./ruleset/netfilx.yaml
-  url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml"
-Telegram:
-  type: http
-  behavior: classical
-  interval: 86400
-  path: ./ruleset/telegram.yaml
-  url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
-Bahamut:
-  type: http
-  behavior: classical
-  interval: 86400
-  path: ./ruleset/Bahamut.yaml
-  url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml"
-Youtube:
-  type: http
-  behavior: classical
-  interval: 86400
-  path: ./ruleset/YouTube.yaml
-  url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
-Abema:
-  type: http
-  behavior: classical
-  interval: 86400
-  path: ./ruleset/abema.yaml
-  url: "https://raw.githubusercontent.com/Anlanxy/Net-Music/master/AbemaTV.yaml"
-Proxy:
-  type: http
-  behavior: classical
-  interval: 86400
-  path: ./ruleset/proxy.yaml
-  url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical.yaml"
+  Direct:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/direct.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml"
+  Reject:
+    type: http
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/reject.yaml
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+  Paypal:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/paypal.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/PayPal/PayPal.yaml"
+  PikPak:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/PikPak.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PikPak/PikPak.yaml"
+  Netfilx:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/netfilx.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml"
+  Telegram:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/telegram.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
+  Bahamut:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/Bahamut.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml"
+  Youtube:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/YouTube.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
+  Abema:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/abema.yaml
+    url: "https://raw.githubusercontent.com/Anlanxy/Net-Music/master/AbemaTV.yaml"
+  AsianMedia:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/AsianMedia.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AsianMedia/AsianMedia.yaml"
+  Proxy:
+    type: http
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/proxy.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical.yaml"
 rules:
-  - RULE-SET,Direct,
-  - RULE-SET,Reject,
-  - RULE-SET,Paypal,
-  - RULE-SET,PikPak,
-  - RULE-SET,Netfilx,
-  - RULE-SET,Telegram,
-  - RULE-SET,Bahamut,
-  - RULE-SET,YouTube,
-  - RULE-SET,Abema,
-  - GEOSITE,github,
-  - GEOSITE,twitter,
-  - GEOSITE,google,
-  - GEOSITE,ehentai,
-  - GEOSITE,discord,
-  - GEOSITE,spotify,
-  - RULE-SET,Proxy,
-  - GEOSITE,CN,Direct,
-  - GEOIP,CN,Direct,
-  - MATCH,final
+  - RULE-SET,Direct,𝑫𝒊𝒓𝒆𝒄𝒕
+  - RULE-SET,Reject,𝑨𝑫 𝑩𝒍𝒐𝒄𝒌
+  - RULE-SET,Paypal,𝑺𝒆𝒓𝒗𝒊𝒄𝒆
+  - RULE-SET,PikPak,𝑨𝑷𝑷
+  - RULE-SET,Telegram,𝑨𝑷𝑷
+  - RULE-SET,AsianMedia,𝑴𝒆𝒅𝒊𝒂◇
+  - RULE-SET,Netfilx,𝑴𝒆𝒅𝒊𝒂◆
+  - RULE-SET,Bahamut,𝑴𝒆𝒅𝒊𝒂◆
+  - RULE-SET,YouTube,𝑴𝒆𝒅𝒊𝒂◆
+  - RULE-SET,Abema,𝑴𝒆𝒅𝒊𝒂◆
+  - GEOSITE,github,𝑷𝒓𝒐𝒙𝒊𝒆𝒔
+  - GEOSITE,twitter,𝑨𝑷𝑷
+  - GEOSITE,google,𝑷𝒓𝒐𝒙𝒊𝒆𝒔
+  - GEOSITE,ehentai,𝑺𝒆𝒓𝒗𝒊𝒄𝒆
+  - GEOSITE,discord,𝑨𝑷𝑷
+  - GEOSITE,spotify,𝑨𝑷𝑷
+  - RULE-SET,Proxy,𝑷𝒓𝒐𝒙𝒊𝒆𝒔
+  - GEOSITE,CN,𝑫𝒊𝒓𝒆𝒄𝒕
+  - GEOIP,CN,𝑫𝒊𝒓𝒆𝒄𝒕
+  - MATCH,𝑭𝒊𝒏𝒂𝒍
