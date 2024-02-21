@@ -52,8 +52,8 @@ proxy-groups:
   - name: 𝑷𝒓𝒐𝒙𝒊𝒆𝒔
     type: select
     proxies:
-      - 𝑺𝒆𝒍𝒆𝒄𝒕
       - 𝑭𝒂𝒍𝒍𝒃𝒂𝒄𝒌
+      - 𝑺𝒆𝒍𝒆𝒄𝒕
       - 𝑩𝒂𝒍𝒂𝒏𝒄𝒆 𝑷𝑪𝑪
       - 𝑫𝒊𝒓𝒆𝒄𝒕
   - name: 𝑺𝒆𝒍𝒆𝒄𝒕
@@ -74,9 +74,9 @@ proxy-groups:
   - name: 𝑴𝒆𝒅𝒊𝒂◇
     type: select
     proxies:
+      - 𝑫𝒊𝒓𝒆𝒄𝒕
       - 𝑯𝑲*
       - 𝑻𝑾*
-      - 𝑫𝒊𝒓𝒆𝒄𝒕
   - name: 𝑺𝒆𝒓𝒗𝒊𝒄𝒆
     type: select
     proxies:
