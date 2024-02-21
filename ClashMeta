@@ -172,6 +172,16 @@ proxy-groups:
     interval: 120
     use:
       - clashmeta
+proxy-providers:
+clashmeta:
+type: http
+url: "https://gist.githubusercontent.com/Anlanxy/a46b4d060291eded5b2c3d3f92d4aee1/raw/Meta"
+interval: 1200
+# path: ./provider1.yaml
+health-check:
+enable: true
+interval: 300
+url: https://cp.cloudflare.com/generate_204
 rule-providers:
   Direct:
     behavior: classical
