@@ -245,8 +245,9 @@ rule-providers:
    #url: ""
    #interval: 1200
 rules:
-  - RULE-SET,Direct,𝑫𝒊𝒓𝒆𝒄𝒕
   - DOMAIN-KEYWORD,pushauction.com,𝑫𝒊𝒓𝒆𝒄𝒕
+  - DOMAIN-KEYWORD,google.com,𝑨𝑷𝑷
+  - RULE-SET,Direct,𝑫𝒊𝒓𝒆𝒄𝒕
   - RULE-SET,Reject,𝑨𝑫 𝑩𝒍𝒐𝒄𝒌
   - RULE-SET,Paypal,𝑺𝒆𝒓𝒗𝒊𝒄𝒆
   - RULE-SET,PikPak,𝑨𝑷𝑷
