@@ -246,6 +246,7 @@ rule-providers:
    #interval: 1200
 rules:
   - DOMAIN-KEYWORD,pushauction.com,𝑫𝒊𝒓𝒆𝒄𝒕
+  - DOMAIN-KEYWORD,cn.bing.com,𝑫𝒊𝒓𝒆𝒄𝒕
   - DOMAIN-KEYWORD,google.com,𝑨𝑷𝑷
   - RULE-SET,Direct,𝑫𝒊𝒓𝒆𝒄𝒕
   - RULE-SET,Reject,𝑨𝑫 𝑩𝒍𝒐𝒄𝒌
